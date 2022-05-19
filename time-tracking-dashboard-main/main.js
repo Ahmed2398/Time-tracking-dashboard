@@ -6,7 +6,8 @@ const mothlyBtn = document.querySelector('#monthly-btn');
 const hours = document.querySelectorAll('.hours');
 const lastTime = document.querySelectorAll('.last-time');
 
-function dailyData() {
+
+function dailyData(){
     fetch('https://ahmed2398.github.io/Time-tracking-dashboard/time-tracking-dashboard-main/data.json')
         .then(response => response.json())
         .then(data => {
@@ -25,8 +26,6 @@ function weeklyData() {
                 hours[i].innerHTML = data[i].timeframes.weekly.current + 'hrs';
                 lastTime[i].innerHTML = 'Last Day - ' + data[i].timeframes.weekly.previous + 'hrs';
             })
-        })
-}
 
 
 function monthlyData() {
@@ -37,8 +36,8 @@ function monthlyData() {
                 hours[i].innerHTML = data[i].timeframes.monthly.current + 'hrs';
                 lastTime[i].innerHTML = 'Last Day - ' + data[i].timeframes.monthly.previous + 'hrs';
             })
-        })
-}
+
+
 
 
 

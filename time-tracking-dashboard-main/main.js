@@ -20,7 +20,7 @@ function dailyData(){
 
 function weeklyData() {
     fetch('/time-tracking-dashboard-main/data.json')
-        .then(response => response.json())
+        .then(response => response.JSON.parse(undefined))
         .then(data => {
             hours.forEach((e, i) => {
                 hours[i].innerHTML = data[i].timeframes.weekly.current + 'hrs';

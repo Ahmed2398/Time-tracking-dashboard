@@ -9,7 +9,7 @@ const lastTime = document.querySelectorAll('.last-time');
 
 function dailyData(){
  
-    fetch('https://raw.githubusercontent.com/Ahmed2398/time-tracking-dashboard-main/main/data.json')
+    fetch('https://raw.githubusercontent.com/Ahmed2398/Time-tracking-dashboard/main/time-tracking-dashboard-main/data.json')
 
         .then(response => response.json())
         .then(data => {
@@ -21,7 +21,7 @@ function dailyData(){
 }
 
 function weeklyData() {
-    fetch('https://raw.githubusercontent.com/Ahmed2398/time-tracking-dashboard-main/main/data.json')
+    fetch('https://raw.githubusercontent.com/Ahmed2398/Time-tracking-dashboard/main/time-tracking-dashboard-main/data.json')
         .then(response => response.json())
         .then(data => {
             hours.forEach((e, i) => {
@@ -33,7 +33,7 @@ function weeklyData() {
 
 
 function monthlyData() {
-    fetch('https://raw.githubusercontent.com/Ahmed2398/time-tracking-dashboard-main/main/data.json')
+    fetch('https://raw.githubusercontent.com/Ahmed2398/Time-tracking-dashboard/main/time-tracking-dashboard-main/data.json')
         .then(response => response.json())
         .then(data => {
             hours.forEach((e, i) => {
